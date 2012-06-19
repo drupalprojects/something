@@ -377,3 +377,14 @@ function something_form_submit($form, &$form_state) {
     drupal_set_message('Something not created.', 'error');
   }
 }
+
+/**
+ * Implements hook_views_api().
+ */
+function something_views_api() {
+  return array(
+    'api' => 3.0,
+    'path' => drupal_get_path('module', 'something') . '/views',
+  );
+}
+
