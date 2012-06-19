@@ -1,0 +1,8 @@
+name = Something Entity
+description = Implements an empty entity that is nothing, but can be something once you add fields to it.
+package = Entity
+configure = admin/structure/something
+core = 7.x
+
+
+; Handlers
